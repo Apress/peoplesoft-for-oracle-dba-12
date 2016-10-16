@@ -1,0 +1,349 @@
+
+PM_EVENT_DEFN_SET PM_EVENT_DEFN_ID DESCR60                                                                              
+----------------- ---------------- ------------------------------------------------------------                         
+PM_EVENT_LABEL                 PM_ADDTNL_LABEL                                                                          
+------------------------------ ------------------------------                                                           
+'1:'||E.PM_METRICID_1||'='||M1.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'2:'||E.PM_METRICID_2||'='||M2.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'3:'||E.PM_METRICID_3||'='||M3.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'4:'||E.PM_METRICID_4||'='||M4.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'5:'||E.PM_METRICID_5||'='||M5.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'6:'||E.PM_METRICID_6||'='||M6.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'7:'||E.PM_METRICID_7||'='||M7.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+                1              150 JVM Status                                                                           
+JVM Status                                                                                                              
+1:13=%JVM Memory Used                                                     2 Gauge                                       
+2:14=Max JVM Memory Available                                             2 Gauge                                       
+3:15=Sessions in Web-App                                                  2 Gauge                                       
+4:16=Execute Threads                                                      2 Gauge                                       
+5:17=Busy Threads                                                         2 Gauge                                       
+6:150=Domain Count                                                        2 Gauge                                       
+7:0=                                                                                                                    
+                                                                                                                        
+                1              151 Netstat state counts                                                                 
+Network Status                                                                                                          
+1:10=Time_Wait Sockets                                                    2 Gauge                                       
+2:11=Close_Wait Sockets                                                   2 Gauge                                       
+3:12=Established Sockets                                                  2 Gauge                                       
+4:129=JOLT Traffic (bytes/sec)                                            2 Gauge                                       
+5:130=HTTP (bytes/sec)                                                    2 Gauge                                       
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+                1              152 Web site status reported by WebServer Resource Monitor                               
+Web Site Status                                                                                                         
+1:1=Requests to all Servlets                                              1 Counter                                     
+2:2=Servlet Requests (last minute)                                        2 Gauge                                       
+3:3=Avg Request Time (last minute)                                        2 Gauge                                       
+4:4=Time in all Servlets (ms)                                             1 Counter                                     
+5:5=Current Sessions                                                      2 Gauge                                       
+6:0=                                                                                                                    
+7:6=Site Path                                                             4 String                                      
+                                                                                                                        
+                1              153 Web servlet status reported by WebServer Resource Monitor                            
+Web Servlet Status             Servlet Path                                                                             
+1:7=Requests to this Servlet                                              1 Counter                                     
+2:2=Servlet Requests (last minute)                                        2 Gauge                                       
+3:3=Avg Request Time (last minute)                                        2 Gauge                                       
+4:9=Time in this Servlet (ms)                                             1 Counter                                     
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:62=Servlet Name                                                         4 String                                      
+                                                                                                                        
+                1              200 Events sent by all C++ processes                                                     
+Resources Per Process                                                                                                   
+1:102=%CPU Used                                                           2 Gauge                                       
+2:103=CPU Time (secs)                                                     1 Counter                                     
+3:104=VM (bytes)                                                          2 Gauge                                       
+4:105=Working Set (bytes)                                                 2 Gauge                                       
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+                1              300 Host Resource Status                                                                 
+Host Resource Status           Tuxedo Domain Trace Levels                                                               
+1:102=%CPU Used                                                           2 Gauge                                       
+2:108=%Memory Used                                                        2 Gauge                                       
+3:109=Hard Page Faults/Second                                             2 Gauge                                       
+4:110=Total Tuxedo Connections                                            2 Gauge                                       
+5:111=Total Tuxedo Requests Queued                                        2 Gauge                                       
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+                1              301 Reported in groups to simulate a Tuxedo command line "pq"                            
+Tuxedo "pq" Row                Server Name                                                                              
+1:37=Server Count                                                         3 Numeric Identifer                           
+2:38=Queue Length                                                         2 Gauge                                       
+3:112=Avg. Queue Length                                                   2 Gauge                                       
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:113=Queue Name                                                          4 String                                      
+                                                                                                                        
+                1              302 Reported in groups to simulate a Tuxedo command line "psr"                           
+Tuxedo "psr" Row               Current Service                                                                          
+1:114=Server Instance                                                     3 Numeric Identifer                           
+2:115=Total Requests                                                      1 Counter                                     
+3:138=PID                                                                 3 Numeric Identifer                           
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:116=Server Name                                                         4 String                                      
+                                                                                                                        
+                1              350 Master Scheduler Status                                                              
+
+PM_EVENT_DEFN_SET PM_EVENT_DEFN_ID DESCR60                                                                              
+----------------- ---------------- ------------------------------------------------------------                         
+PM_EVENT_LABEL                 PM_ADDTNL_LABEL                                                                          
+------------------------------ ------------------------------                                                           
+'1:'||E.PM_METRICID_1||'='||M1.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'2:'||E.PM_METRICID_2||'='||M2.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'3:'||E.PM_METRICID_3||'='||M3.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'4:'||E.PM_METRICID_4||'='||M4.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'5:'||E.PM_METRICID_5||'='||M5.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'6:'||E.PM_METRICID_6||'='||M6.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'7:'||E.PM_METRICID_7||'='||M7.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+Master Scheduler Status                                                                                                 
+1:120=Active Processes                                                    2 Gauge                                       
+2:121=Queued Processes                                                    2 Gauge                                       
+3:142=Blocked Processes                                                   2 Gauge                                       
+4:123=Unused Process Slots                                                2 Gauge                                       
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+                1              351 Master Scheduler Detail per Process Type                                             
+Master Scheduler Detail        Process Type                                                                             
+1:120=Active Processes                                                    2 Gauge                                       
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:123=Unused Process Slots                                                2 Gauge                                       
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:141=Server Name                                                         4 String                                      
+                                                                                                                        
+                1              354 Batch Queue Details                                                                  
+Batch Queue Details                                                                                                     
+1:121=Queued Processes                                                    2 Gauge                                       
+2:142=Blocked Processes                                                   2 Gauge                                       
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:124=Process Type                                                        4 String                                      
+                                                                                                                        
+                1              355 Query killed because it is taking too long to complete.                              
+Killed Query                   Query details                                                                            
+1:160=Timed-out ?                                                         3 Numeric Identifer                           
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:161=Query Name                                                          4 String                                      
+                                                                                                                        
+                1              500 JOLT Service Exception                                                               
+JOLT Service Exception                                                                                                  
+1:151=PMU instance affected                                               3 Numeric Identifer                           
+2:152=JOLT Error Number                                                   3 Numeric Identifer                           
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:153=JOLT Error Detail                                                   4 String                                      
+                                                                                                                        
+                1              600 PSPING metrics fowarded from browser                                                 
+PSPING                         OPRID, JSessionID                                                                        
+1:131=Network Latency (ms)                                                2 Gauge                                       
+2:132=WebServer Latency (ms)                                              2 Gauge                                       
+3:133=AppServer Latency (ms)                                              2 Gauge                                       
+4:134=DB Latency (millisecs)                                              2 Gauge                                       
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:135=IP Address                                                          4 String                                      
+                                                                                                                        
+                1              601 User Event - Monitoring Level Override                                               
+User Monitoring Level Override                                                                                          
+1:47=Agent Filter Mask                                                    3 Numeric Identifer                           
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:136=User Initiated PMU Name                                             4 String                                      
+                                                                                                                        
+                1              701 PPMI Handler Event  - registerNotificationInterest                                   
+PPMI Notify Interest           Additional Data                                                                          
+1:0=                                                                                                                    
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+                1              702 PPMI Handler Event  - registerNotificationListener                                   
+PPMI Notify Listener           Additional Data                                                                          
+
+PM_EVENT_DEFN_SET PM_EVENT_DEFN_ID DESCR60                                                                              
+----------------- ---------------- ------------------------------------------------------------                         
+PM_EVENT_LABEL                 PM_ADDTNL_LABEL                                                                          
+------------------------------ ------------------------------                                                           
+'1:'||E.PM_METRICID_1||'='||M1.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'2:'||E.PM_METRICID_2||'='||M2.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'3:'||E.PM_METRICID_3||'='||M3.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'4:'||E.PM_METRICID_4||'='||M4.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'5:'||E.PM_METRICID_5||'='||M5.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'6:'||E.PM_METRICID_6||'='||M6.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'7:'||E.PM_METRICID_7||'='||M7.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+1:0=                                                                                                                    
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:55=PPMI Group Name                                                      4 String                                      
+                                                                                                                        
+                1              703 PPMI Handler Event - cancelNotificationInterest                                      
+PPMI Notify Cancel Interest    Additional Data                                                                          
+1:0=                                                                                                                    
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:55=PPMI Group Name                                                      4 String                                      
+                                                                                                                        
+                1              704 PPMI Handler Event -notifyStateChange for Agent State                                
+PPMI Notify Agent Change       Additional Data                                                                          
+1:0=                                                                                                                    
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+                1              705 PPMI Handler Event - notifyStateChange for Monitor State                             
+PPMI Notify Monitor Change                                                                                              
+1:0=                                                                                                                    
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+                1              801 Monitoring Server Alarm - Buffer Overrun                                             
+Monitor Server Buffer Overrun                                                                                           
+1:41=Dropped Items                                                        1 Counter                                     
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:54=PPMI Client URL                                                      4 String                                      
+                                                                                                                        
+                1              802 Monitoring Server Alarm - Unable to Contact PPMIClient                               
+Monitoring Server Client Lost                                                                                           
+1:0=                                                                                                                    
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:54=PPMI Client URL                                                      4 String                                      
+                                                                                                                        
+                1              803 Monitoring Server Alarm - Data lost                                                  
+Monitoring Server Data Lost                                                                                             
+1:0=                                                                                                                    
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:54=PPMI Client URL                                                      4 String                                      
+                                                                                                                        
+                1              900 Agent Alarm - Buffer Overrun Alarm                                                   
+Agent Buffer Overrun                                                                                                    
+1:41=Dropped Items                                                        1 Counter                                     
+2:42=Buffer Size (bytes)                                                  1 Counter                                     
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:59=Monitor Servlet URL                                                  4 String                                      
+                                                                                                                        
+                1              901 Agent Event - Agent Initialization                                                   
+Agent Init Notification        Additional Data                                                                          
+1:43=Contact Attempts                                                     1 Counter                                     
+
+PM_EVENT_DEFN_SET PM_EVENT_DEFN_ID DESCR60                                                                              
+----------------- ---------------- ------------------------------------------------------------                         
+PM_EVENT_LABEL                 PM_ADDTNL_LABEL                                                                          
+------------------------------ ------------------------------                                                           
+'1:'||E.PM_METRICID_1||'='||M1.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'2:'||E.PM_METRICID_2||'='||M2.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'3:'||E.PM_METRICID_3||'='||M3.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'4:'||E.PM_METRICID_4||'='||M4.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'5:'||E.PM_METRICID_5||'='||M5.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'6:'||E.PM_METRICID_6||'='||M6.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+'7:'||E.PM_METRICID_7||'='||M7.PM_METRICLABEL                             P XLATLONGNAME                                
+------------------------------------------------------------------------- - ------------------------------              
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+                1              902 Agent Event  - Agent Dynamic Configuration State Change Ack                          
+Agent Configuration Ack                                                                                                 
+1:44=Agent Buffer Max Size (bytes)                                        2 Gauge                                       
+2:45=Agent Send Interval (secs)                                           2 Gauge                                       
+3:46=Agent HeartBeat Interval(secs)                                       2 Gauge                                       
+4:47=Agent Filter Mask                                                    3 Numeric Identifer                           
+5:48=Agent Idle Time (secs)                                               1 Counter                                     
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+                1              903 Agent Event - Contact Initiated with Monitoring Server                               
+Agent Contact Notification                                                                                              
+1:43=Contact Attempts                                                     1 Counter                                     
+2:0=                                                                                                                    
+3:0=                                                                                                                    
+4:0=                                                                                                                    
+5:0=                                                                                                                    
+6:0=                                                                                                                    
+7:0=                                                                                                                    
+                                                                                                                        
+
+27 rows selected.
+

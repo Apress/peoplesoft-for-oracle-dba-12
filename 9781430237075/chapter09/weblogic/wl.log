@@ -1,0 +1,71 @@
+
+SQL*Loader: Release 9.2.0.5.0 - Production on Thu Nov 18 15:11:10 2004
+
+Copyright (c) 1982, 2002, Oracle Corporation.  All rights reserved.
+
+Control File:   wl.ldr
+Data File:      PIA_access.log
+  Bad File:     wl.bad
+  Discard File: wl.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 999999
+Bind array:     500 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table WEBLOGIC, loaded when 1:1 != 0X23(character '#')
+Insert option in effect for this table: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TIMESTAMP                            1:19    19  WHT      CHARACTER            
+    SQL string for column : "TO_DATE(:timestamp,'YYYY-MM-DD HH24:MI:ss')"
+DURATION                             NEXT     *  WHT      CHARACTER            
+BYTES_SENT                           NEXT     *  WHT      CHARACTER            
+REMOTE_HOST1                         NEXT     *   .       CHARACTER            
+REMOTE_HOST2                         NEXT     *   .       CHARACTER            
+REMOTE_HOST3                         NEXT     *   .       CHARACTER            
+REMOTE_HOST4                         NEXT     *  WHT      CHARACTER            
+REMOTE_DNS                           NEXT     *  WHT      CHARACTER            
+REQUEST_METHOD                       NEXT     *  WHT      CHARACTER            
+RETURN_STATUS                        NEXT     *  WHT      CHARACTER            
+    NULL if RETURN_STATUS = 0X2d(character '-')
+USER_AGENT                           NEXT     *  WHT O(") CHARACTER            
+URL                                  NEXT     *  WHT      CHARACTER            
+QUERY_STRING1                        NEXT     *   &       CHARACTER            
+    SQL string for column : "SUBSTR(:query_string1,2)"
+QUERY_STRING2                        NEXT     *   &       CHARACTER            
+QUERY_STRING3                        NEXT     *   &       CHARACTER            
+QUERY_STRING4                        NEXT     *   &       CHARACTER            
+QUERY_STRING5                        NEXT     *   &       CHARACTER            
+QUERY_STRING6                        NEXT     *   &       CHARACTER            
+QUERY_STRING7                        NEXT     *   &       CHARACTER            
+QUERY_STRING8                        NEXT     *   &       CHARACTER            
+
+Record 1: Discarded - failed all WHEN clauses.
+Record 2: Discarded - failed all WHEN clauses.
+
+Table WEBLOGIC:
+  170 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  2 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 251124 bytes(51 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           172
+Total logical records rejected:         0
+Total logical records discarded:        2
+
+Run began on Thu Nov 18 15:11:10 2004
+Run ended on Thu Nov 18 15:11:11 2004
+
+Elapsed time was:     00:00:00.41
+CPU time was:         00:00:00.06

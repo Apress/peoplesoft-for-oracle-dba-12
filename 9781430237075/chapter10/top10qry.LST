@@ -1,0 +1,12 @@
+
+QRYRANK OPRID      QRYNAME                           TOTEXEC    TOTTIME PCTTIME
+------- ---------- ------------------------------ ---------- ---------- -------
+      1            DMKPUB                                  4        2.8    38.5
+      2 PS         DMK                                     7        2.4    32.7
+      3            DEPT_SALARIES__NVISION_                 1        1.7    23.3
+      4            PER701__DEPT_TBL                        1        0.3     3.8
+      5            BAS_ENROLL_TXT                          1        0.1     1.6
+      6            CARTRAIN_CAREER_PLAN_TRAINING           1        0.0     0.0
+
+6 rows selected.
+

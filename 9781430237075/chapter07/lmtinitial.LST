@@ -1,0 +1,39 @@
+SQL> 
+SQL> SELECT tablespace_name, block_size, initial_extent, extent_management
+  2  FROM dba_tablespaces WHERE tablespace_name = 'HRAPP';
+
+TABLESPACE_NAME                BLOCK_SIZE INITIAL_EXTENT EXTENT_MAN
+------------------------------ ---------- -------------- ----------
+HRAPP                                8192          65536 LOCAL
+
+1 row selected.
+
+SQL> 
+SQL> CREATE TABLE dmk (a NUMBER) TABLESPACE hrapp
+  2  STORAGE (INITIAL 100K NEXT 50K MINEXTENTS 2);
+
+Table created.
+
+SQL> 
+SQL> COMPUTE SUM OF bytes ON REPORT
+SQL> COMPUTE SUM OF blocks ON REPORT
+SQL> BREAK ON REPORT
+SQL> 
+SQL> SELECT  extent_id, bytes, blocks, tablespace_name
+  2  FROM    user_extents
+  3  WHERE   segment_name = 'DMK'
+  4  AND     segment_type = 'TABLE'
+  5  ;
+
+ EXTENT_ID      BYTES     BLOCKS TABLESPACE_NAME
+---------- ---------- ---------- ------------------------------
+         0      65536          8 HRAPP
+         1      65536          8 HRAPP
+         2      65536          8 HRAPP
+           ---------- ----------
+sum            196608         24
+
+3 rows selected.
+
+SQL> 
+SQL> spool off

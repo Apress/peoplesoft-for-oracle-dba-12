@@ -1,0 +1,18 @@
+LOAD DATA
+INFILE 'TUXLOG.041904'
+REPLACE
+INTO TABLE tuxlog
+FIELDS TERMINATED BY WHITESPACE
+TRAILING NULLCOLS
+(timestamp TERMINATED BY '.' "TO_DATE(:timestamp,'HH24MISS')"
+,nodename  TERMINATED BY '!'
+,prcsname  TERMINATED BY '.'
+,prcsid    TERMINATED BY ':'
+,dummy1    FILLER	   
+,dummy2    FILLER	
+,funcname  TERMINATED BY '(' --function name
+,service   TERMINATED BY ',' --"TRANSLATE('{','')"
+,dummy3    FILLER TERMINATED BY ','
+,dummy4    FILLER TERMINATED BY ','
+,msg_size  TERMINATED BY ','
+)

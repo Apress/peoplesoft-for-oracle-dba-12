@@ -1,0 +1,34 @@
+!*****************************************
+!  session.sqc:  oracle session tracing  *
+!*****************************************
+!***********************************************************************
+! Function:    enable_session_trace                                    *
+!                                                                      *
+! Description: enable oracle session trace                             *
+!                                                                      *
+!***********************************************************************
+begin-procedure enable_session_trace
+
+display 'Enabling Oracle Session Trace'
+
+begin-sql
+ALTER SESSION SET SQL_TRACE=TRUE
+end-SQL
+
+end-procedure
+
+!***********************************************************************
+! Function:    disable_session_trace                                   *
+!                                                                      *
+! Description: disable oracle session trace                            *
+!                                                                      *
+!***********************************************************************
+begin-procedure disable_session_trace
+
+display 'Disabling Oracle Session Trace'
+
+begin-sql
+ALTER SESSION SET SQL_TRACE=FALSE
+end-SQL
+
+end-procedure

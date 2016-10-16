@@ -1,0 +1,65 @@
+
+SQL*Loader: Release 9.2.0.5.0 - Production on Thu Nov 18 17:28:31 2004
+
+Copyright (c) 1982, 2002, Oracle Corporation.  All rights reserved.
+
+Control File:   tracesql.ldr
+Data File:      PS_go-faster-3.tracesql
+  Bad File:     tracesql.bad
+  Discard File: tracesql.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 999999
+Bind array:     500 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TRACESQL, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+PROGRAM                             FIRST     *   .       CHARACTER            
+PID                                  NEXT     *  WHT      CHARACTER            
+LINE_ID                              NEXT     *   -       CHARACTER            
+LINE_NUM                             NEXT     *  WHT      CHARACTER            
+TIMESTAMP                            NEXT     *  WHT      CHARACTER            
+    SQL string for column : "TO_DATE(REPLACE(:timestamp,'.',':'),'HH24:MI:SS')"
+TIME_SINCE_LAST                      NEXT     *  WHT      CHARACTER            
+CURSOR_LEAD                          NEXT     *   #       CHARACTER            
+  (FILLER FIELD)
+CURSOR                               NEXT     *   .       CHARACTER            
+DATABASE                             NEXT     *  WHT      CHARACTER            
+RETURN_LEAD                          NEXT     *   =       CHARACTER            
+  (FILLER FIELD)
+RETURN_CODE                          NEXT     *  WHT      CHARACTER            
+DURATION_LEAD                        NEXT     *   =       CHARACTER            
+  (FILLER FIELD)
+DURATION                             NEXT     *  WHT      CHARACTER            
+OPERATION                            NEXT  4000   &       CHARACTER            
+    SQL string for column : "SUBSTR(:operation,1,4000)"
+
+
+Table TRACESQL:
+  7423 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 250116 bytes(38 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:          7423
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Nov 18 17:28:31 2004
+Run ended on Thu Nov 18 17:28:33 2004
+
+Elapsed time was:     00:00:02.18
+CPU time was:         00:00:00.18

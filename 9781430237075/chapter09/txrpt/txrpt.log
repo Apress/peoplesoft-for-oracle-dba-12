@@ -1,0 +1,60 @@
+
+SQL*Loader: Release 9.2.0.5.0 - Production on Thu Nov 18 15:43:19 2004
+
+Copyright (c) 1982, 2002, Oracle Corporation.  All rights reserved.
+
+Control File:   txrpt.ldr
+Data File:      APPQ.stderr
+  Bad File:     txrpt.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 999999
+Bind array:     500 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TXRPT, loaded when 1:1 = 0X40(character '@')
+Insert option in effect for this table: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+SERVICE                             FIRST     *  WHT      CHARACTER            
+    SQL string for column : "SUBSTR(:service,2)"
+PID                                  NEXT     *  WHT      CHARACTER            
+STIMESTAMP                           NEXT     *  WHT      CHARACTER            
+    SQL string for column : ":stimestamp/86400+1/24+TO_DATE('01011970','DDMMYYYY')"
+STIME                                NEXT     *  WHT      CHARACTER            
+    SQL string for column : ":stime/1000"
+QUEUE                                NEXT     *  WHT      CHARACTER            
+    SQL string for column : "'APPQ'"
+ETIME                                NEXT     *  WHT      CHARACTER            
+    SQL string for column : ":etime/1000"
+
+Record 1: Discarded - failed all WHEN clauses.
+Record 2: Discarded - failed all WHEN clauses.
+
+Table TXRPT:
+  51 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  2 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 255420 bytes(165 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            53
+Total logical records rejected:         0
+Total logical records discarded:        2
+
+Run began on Thu Nov 18 15:43:19 2004
+Run ended on Thu Nov 18 15:43:19 2004
+
+Elapsed time was:     00:00:00.12
+CPU time was:         00:00:00.03

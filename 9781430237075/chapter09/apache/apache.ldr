@@ -1,0 +1,27 @@
+LOAD DATA
+INFILE 'access.log'
+REPLACE
+INTO TABLE apache
+FIELDS TERMINATED BY '|'
+TRAILING NULLCOLS
+(timestamp      "TO_DATE(:timestamp,'YYYY.MM.DD HH24:MI:ss')"
+,duration     
+,bytes_sent     
+,status FILLER 
+,remote_host1   TERMINATED BY '.'
+,remote_host2   TERMINATED BY '.'
+,remote_host3   TERMINATED BY '.'
+,remote_host4     
+,user_agent     
+,return_status  NULLIF (return_status="-")
+,request_method
+,url          
+,query_string1  TERMINATED BY '&' "SUBSTR(:query_string1,2)"
+,query_string2  TERMINATED BY '&'
+,query_string3  TERMINATED BY '&'
+,query_string4  TERMINATED BY '&'
+,query_string5  TERMINATED BY '&'
+,query_string6  TERMINATED BY '&'
+,query_string7  TERMINATED BY '&'
+,query_string8  TERMINATED BY '&'
+)

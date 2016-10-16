@@ -1,0 +1,56 @@
+
+DBNAM PM_HOST_PORT          PM_AGENT_DTTM       PM_EVENT_DEFN_ID
+----- --------------------- ------------------- ----------------
+DESCR60
+------------------------------------------------------------
+PM_METRICLABEL1                PM_METRIC_VALUE1
+------------------------------ ----------------
+PM_METRICLABEL2                PM_METRIC_VALUE2
+------------------------------ ----------------
+PM_METRICLABEL3                PM_METRIC_VALUE3
+------------------------------ ----------------
+PM_METRICLABEL4                PM_METRIC_VALUE4
+------------------------------ ----------------
+PM_METRICLABEL7                PM_METRIC_VALUE7
+------------------------------ --------------------
+HR88  go-faster-3:7201:7202 16:57:29 24.08.2004              153
+Web servlet status reported by WebServer Resource Monitor
+Requests to this Servlet                      0
+Servlet Requests (last minute)                0
+Avg Request Time (last minute)                0
+Time in this Servlet (ms)                     0
+Servlet Name                   /*
+
+
+
+Requests to this Servlet                     28
+Servlet Requests (last minute)                3
+Avg Request Time (last minute)                3
+Time in this Servlet (ms)                   651
+Servlet Name                   /monitor
+
+
+
+Requests to this Servlet                      0
+Servlet Requests (last minute)                0
+Avg Request Time (last minute)                0
+Time in this Servlet (ms)                     0
+Servlet Name                   /ppmi
+
+
+
+Requests to this Servlet                      5
+Servlet Requests (last minute)                0
+Avg Request Time (last minute)                0
+Time in this Servlet (ms)                 25637
+Servlet Name                   /psc
+
+
+
+Requests to this Servlet                      2
+Servlet Requests (last minute)                0
+Avg Request Time (last minute)                0
+Time in this Servlet (ms)                  6529
+Servlet Name                   /psp
+
+

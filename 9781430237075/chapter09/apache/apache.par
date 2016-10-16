@@ -1,0 +1,8 @@
+control=apache.ldr
+log=apache.log
+bad=apache.bad 
+discard=apache.dsc
+direct=false
+errors=999999
+rows=500
+

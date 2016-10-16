@@ -1,0 +1,140 @@
+SELECT jolt_send_bytes, cum_prop_msg, cum_prop_vol
+FROM (
+SELECT z.*
+, sum(prop_message) over (order by jolt_send_bytes range unbounded preceding) as cum_prop_msg
+, sum(prop_volume) over (order by jolt_send_bytes range unbounded preceding) as cum_prop_vol
+FROM (
+SELECT ratio_to_report(num_messages) over () as prop_message
+, ratio_to_report(sum_bytes) over () as prop_volume
+, y.*
+FROM (
+SELECT jolt_send_bytes
+, count(*) num_messages
+, sum(jolt_send_bytes) sum_bytes
+FROM (
+SELECT c.pm_metric_value1 jolt_send_bytes
+FROM pspmtranshist c
+, pspmagent b
+, pspmsysdefn a
+WHERE a.pm_systemid = b.pm_systemid
+AND b.pm_agentid = c.pm_agentid
+and c.pm_trans_defn_set = 1
+and c.pm_trans_defn_id = 115
+and c.pm_trans_status = 1
+and a.dbname IN('MHRPRD1A','MPLPRD1A')
+) x
+GROUP by jolt_send_bytes
+) y
+) Z
+) 
+order by jolt_send_bytes
+
+SELECT jolt_recv_bytes, cum_prop_msg, cum_prop_vol
+FROM (
+SELECT z.*
+, sum(prop_message) over (order by jolt_recv_bytes range unbounded preceding) as cum_prop_msg
+, sum(prop_volume) over (order by jolt_recv_bytes range unbounded preceding) as cum_prop_vol
+FROM (
+SELECT ratio_to_report(num_messages) over () as prop_message
+, ratio_to_report(sum_bytes) over () as prop_volume
+, y.*
+FROM (
+SELECT jolt_recv_bytes
+, count(*) num_messages
+, sum(jolt_recv_bytes) sum_bytes
+FROM (
+SELECT c.pm_metric_value2 jolt_recv_bytes
+FROM pspmtranshist c
+, pspmagent b
+, pspmsysdefn a
+WHERE a.pm_systemid = b.pm_systemid
+AND b.pm_agentid = c.pm_agentid
+and c.pm_trans_defn_set = 1
+and c.pm_trans_defn_id = 115
+and c.pm_trans_status = 1
+and a.dbname IN('MHRPRD1A','MPLPRD1A')
+) x
+GROUP by jolt_recv_bytes
+) y
+) Z
+) 
+order by jolt_recv_bytes
+
+
+
+
+SELECT jolt_bytes, cum_prop_msg, cum_prop_vol, num_messages
+FROM (
+SELECT z.*
+, sum(prop_message) over (order by jolt_bytes range unbounded preceding) as cum_prop_msg
+, sum(prop_volume) over (order by jolt_bytes range unbounded preceding) as cum_prop_vol
+FROM (
+SELECT ratio_to_report(num_messages) over () as prop_message
+, ratio_to_report(sum_bytes) over () as prop_volume
+, y.*
+FROM (
+SELECT jolt_bytes
+, count(*) num_messages
+, sum(jolt_bytes) sum_bytes
+FROM (
+SELECT c.pm_metric_value1 jolt_bytes
+, c.pm_agent_strt_dttm
+FROM pspmtranshist c
+, pspmagent b
+, pspmsysdefn a
+WHERE a.pm_systemid = b.pm_systemid
+AND b.pm_agentid = c.pm_agentid
+and c.pm_trans_defn_set = 1
+and c.pm_trans_defn_id = 115
+and c.pm_trans_status = 1
+and a.dbname IN('MHRPRD1A','MPLPRD1A')
+union all
+SELECT c.pm_metric_value2 jolt_bytes
+, c.pm_agent_strt_dttm
+FROM pspmtranshist c
+, pspmagent b
+, pspmsysdefn a
+WHERE a.pm_systemid = b.pm_systemid
+AND b.pm_agentid = c.pm_agentid
+and c.pm_trans_defn_set = 1
+and c.pm_trans_defn_id = 115
+and c.pm_trans_status = 1
+and a.dbname IN('MHRPRD1A','MPLPRD1A')
+) x
+where pm_agent_strt_dttm >= SYSDATE - 5
+GROUP by jolt_bytes
+) y
+) Z
+) 
+order by jolt_bytes
+
+
+
+
+select count(*), count(distinct jolt_byteS)
+FROM (
+SELECT c.pm_metric_value1 jolt_bytes
+, c.pm_agent_strt_dttm
+FROM pspmtranshist c
+, pspmagent b
+, pspmsysdefn a
+WHERE a.pm_systemid = b.pm_systemid
+AND b.pm_agentid = c.pm_agentid
+and c.pm_trans_defn_set = 1
+and c.pm_trans_defn_id = 115
+and c.pm_trans_status = 1
+and a.dbname IN('MHRPRD1A','MPLPRD1A')
+union all
+SELECT c.pm_metric_value2 jolt_bytes
+, c.pm_agent_strt_dttm
+FROM pspmtranshist c
+, pspmagent b
+, pspmsysdefn a
+WHERE a.pm_systemid = b.pm_systemid
+AND b.pm_agentid = c.pm_agentid
+and c.pm_trans_defn_set = 1
+and c.pm_trans_defn_id = 115
+and c.pm_trans_status = 1
+and a.dbname IN('MHRPRD1A','MPLPRD1A')
+) x
+where pm_agent_strt_dttm >= SYSDATE - 5

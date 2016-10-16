@@ -1,0 +1,15 @@
+LOAD DATA
+INFILE 'APPQ.stderr'
+REPLACE
+INTO TABLE txrpt 
+WHEN (1) = '@'
+FIELDS TERMINATED BY WHITESPACE
+TRAILING NULLCOLS
+(service	"SUBSTR(:service,2)" 	-- remove leading @
+,pid	
+,stimestamp	":stimestamp/86400+1/24+TO_DATE('01011970','DDMMYYYY')"
+					-- convert to Oracle data (GMT+1)
+,stime		":stime/1000"		-- convert to seconds (NT)
+,queue		"'APPQ'"			-- do not remove this line
+,etime		":etime/1000" 		-- convert to seconds (NT)
+)

@@ -1,0 +1,32 @@
+
+>      LMID         User Name       Client Name    Time    Status  Bgn/Cmmt/Abrt
+--------------- --------------- --------------- -------- ------- -------------
+GO-FASTER-4     NT              JSH              0:18:28 IDLE    0/0/0
+GO-FASTER-4     NT              tmadmin          0:00:00 IDLE    0/0/0
+GO-FASTER-4     PTWEBSERVER     GO-FASTER-4      0:17:46 IDLE/W  0/0/0
+GO-FASTER-4     PTWEBSERVER     GO-FASTER-4      0:17:40 IDLE/W  0/0/0
+GO-FASTER-4     PS              go-faster-4      0:01:51 IDLE/W  0/0/0
+
+> Prog Name      Queue Name  # Serve Wk Queued  # Queued  Ave. Len    Machine
+---------      ------------------- ---------  --------  --------    -------
+BBL.exe        61375             1         -         0         - GO-FASTER+
+PSSAMSRV.exe   SAMQ              1         -         0         - GO-FASTER+
+JSL.exe        00095.00200       1         -         0         - GO-FASTER+
+JREPSVR.exe    00094.00250       1         -         0         - GO-FASTER+
+PSMONITORSRV.e MONITOR           1         -         0         - GO-FASTER+
+PSPPMSRV.exe   PPMQ2             1         -         0         - GO-FASTER+
+PSAPPSRV.exe   APPQ              1         -         0         - GO-FASTER+
+PSWATCHSRV.exe WATCH             1         -         0         - GO-FASTER+
+
+> Prog Name      Queue Name  Grp Name      ID RqDone Load Done Current Service
+---------      ----------  --------      -- ------ --------- ---------------
+BBL.exe        61375       GO-FAST+       0     37      1850 (  IDLE )
+PSMONITORSRV.e MONITOR     MONITOR        1      0         0 (  IDLE )
+PSAPPSRV.exe   APPQ        APPSRV         1    141      7050 (  IDLE )
+PSWATCHSRV.exe WATCH       WATCH          1      0         0 (  IDLE )
+PSPPMSRV.exe   PPMQ2       PPMGRP       100      0         0 (  IDLE )
+PSSAMSRV.exe   SAMQ        APPSRV       100      0         0 (  IDLE )
+JSL.exe        00095.00200 JSLGRP       200      0         0 (  IDLE )
+JREPSVR.exe    00094.00250 JREPGRP      250      9       450 (  IDLE )
+
+> 

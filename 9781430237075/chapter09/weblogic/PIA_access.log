@@ -1,0 +1,172 @@
+#Version:	1.0
+#Fields:	date time time-taken bytes c-ip c-dns cs-method sc-status cs(User-Agent) cs-uri-stem cs-uri-query
+2004-04-20	17:19:36	1.242	883	10.0.0.8	go-faster-3	GET	500	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/console/actions/mbean/MBeanFramesetAction	bodyFrameId=wl_console_frame_1082477497007&isNew=false&frameId=wl_console_frame_1082477497008&sidebarFrameId=wl_console_frame_1082477497009&MBean=peoplesoft%3AName%3Dpeoplesoft%2CType%3DDomain
+2004-04-20	17:20:16	2.344	0	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/console/login/LoginForm.jsp	-
+2004-04-20	17:20:17	0.19	0	10.0.0.8	go-faster-3	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/console/login/bea_logo.gif	-
+2004-04-20	17:24:00	0.02	0	10.0.0.3	elgin	GET	302	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/	-
+2004-04-20	17:24:03	0.421	1455	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/signon.html	-
+2004-04-20	17:24:17	13.179	7409	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psp/ps/	cmd=login
+2004-04-20	17:24:17	0.01	0	10.0.0.3	elgin	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/signin.css	-
+2004-04-20	17:24:17	0.0	0	10.0.0.3	elgin	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/images/ps_logo.gif	-
+2004-04-20	17:24:17	0.04	567	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/images/people_image_lf.gif	-
+2004-04-20	17:24:17	0.0	0	10.0.0.3	elgin	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/images/blue_stripe_chip.gif	-
+2004-04-20	17:24:17	0.06	5190	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/images/people_image_rt.gif	-
+2004-04-20	17:24:17	0.0	0	10.0.0.3	elgin	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/images/language_japanese.gif	-
+2004-04-20	17:24:17	0.0	0	10.0.0.3	elgin	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/images/schinese.gif	-
+2004-04-20	17:24:17	0.0	0	10.0.0.3	elgin	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/images/tchinese.gif	-
+2004-04-20	17:24:17	0.0	0	10.0.0.3	elgin	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/images/blue_shadow_chip.gif	-
+2004-04-20	17:24:17	0.0	0	10.0.0.3	elgin	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/ps/images/white_shadow_chip.gif	-
+2004-04-20	17:24:37	1.422	7411	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psp/ps/	cmd=login
+2004-04-20	17:24:37	0.04	2544	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/signin.css	-
+2004-04-20	17:24:37	0.03	3918	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/images/ps_logo.gif	-
+2004-04-20	17:24:37	0.0	567	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/images/people_image_lf.gif	-
+2004-04-20	17:24:37	0.0	5190	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/images/people_image_rt.gif	-
+2004-04-20	17:24:37	0.02	941	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/images/language_japanese.gif	-
+2004-04-20	17:24:37	0.0	151	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/images/schinese.gif	-
+2004-04-20	17:24:37	0.01	154	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/images/tchinese.gif	-
+2004-04-20	17:24:37	0.09	44	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/images/blue_stripe_chip.gif	-
+2004-04-20	17:24:37	0.1	72	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/images/blue_shadow_chip.gif	-
+2004-04-20	17:24:37	0.02	98	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/ps/images/white_shadow_chip.gif	-
+2004-04-20	17:24:42	2.574	315	10.0.0.8	go-faster-3	POST	302	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psp/ps/	cmd=login&languageCd=ENG
+2004-04-20	17:24:46	1.833	313	10.0.0.3	elgin	POST	302	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psp/ps/	cmd=login&languageCd=ENG
+2004-04-20	17:24:49	6.749	6218	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psp/ps/EMPLOYEE/HRMS/h/	tab=DEFAULT
+2004-04-20	17:24:49	3.224	6215	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psp/ps/EMPLOYEE/HRMS/h/	tab=DEFAULT
+2004-04-20	17:24:49	0.371	44646	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PSSTYLEDEF_1.css	-
+2004-04-20	17:24:49	0.36	5583	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_SAVEWARNINGSCRIPT_1.js	-
+2004-04-20	17:24:49	0.11	698	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_ISCROSSDOMAIN_1.js	-
+2004-04-20	17:24:50	0.131	6085	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PORTAL_COOKIE_1.js	-
+2004-04-20	17:24:50	0.12	4791	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PORTAL_REFRESHPAGE_1.js	-
+2004-04-20	17:24:50	0.541	1833	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_SCRIPT_1.js	-
+2004-04-20	17:24:51	1.031	343	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/NEW_PORTAL_HDR_CRV_1.gif	-
+2004-04-20	17:24:52	1.832	3650	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psc/ps/EMPLOYEE/HRMS/s/WEBLIB_PT_NAV.ISCRIPT1.FieldFormula.IScript_PT_NAV_PAGELET	Bodyid=true&c=a3KM7hMN08g%3d
+2004-04-20	17:24:52	1.382	52	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/NEW_PORTAL_HDR_SHD_1.gif	-
+2004-04-20	17:24:52	0.13	1842	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/NEW_PS_LOGO_1.gif	-
+2004-04-20	17:24:52	0.661	3651	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psc/ps/EMPLOYEE/HRMS/s/WEBLIB_PT_NAV.ISCRIPT1.FieldFormula.IScript_PT_NAV_PAGELET	Bodyid=true&c=ZKAVq5Y0SC0%3d
+2004-04-20	17:24:52	0.31	210	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/NEW_PORTAL_HDR_TBRCRV_1.gif	-
+2004-04-20	17:24:52	0.3	67	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/NEW_PORTAL_HDR_BG_1.gif	-
+2004-04-20	17:24:53	0.281	60	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/NEW_PORTAL_HDR_TBR_1.gif	-
+2004-04-20	17:24:53	0.22	59	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_HOME_TAB_INACTIVE_RIGHT_1.gif	-
+2004-04-20	17:24:53	0.31	57	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_HOME_TAB_ACTIVE_LEFT_1.gif	-
+2004-04-20	17:24:53	0.21	46	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_HOME_TAB_LINE_1.gif	-
+2004-04-20	17:24:53	0.16	58	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_HOME_TAB_INACTIVE_LEFT_1.gif	-
+2004-04-20	17:24:53	0.231	43	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/TRANSPARENT_1.gif	-
+2004-04-20	17:24:53	0.301	100	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PORTAL_IC_CLOSE_1.gif	-
+2004-04-20	17:24:54	0.43	89	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PORTAL_IC_COLLAPSE_1.gif	-
+2004-04-20	17:24:54	0.31	149	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_GO_1.gif	-
+2004-04-20	17:24:54	0.261	118	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PORTAL_IC_REFRESH_1.gif	-
+2004-04-20	17:24:54	0.261	67	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_CLOSED_FLDR_1.gif	-
+2004-04-20	17:24:54	0.13	51	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_BULLET_1.gif	-
+2004-04-20	17:24:54	0.22	45	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_CLEAR_DOT_1.gif	-
+2004-04-20	17:24:54	0.37	496	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PORTAL_POWEREDBY_1.gif	-
+2004-04-20	17:24:55	0.311	53	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_HOME_TAB_INACTIVE_CENTER_1.gif	-
+2004-04-20	17:24:55	0.231	53	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_HOME_TAB_ACTIVE_CENTER_1.gif	-
+2004-04-20	17:25:31	1.141	4080	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psc/ps/EMPLOYEE/HRMS/s/WEBLIB_PT_NAV.ISCRIPT1.FieldFormula.IScript_PT_NAV_PAGELET	Folder=HC_WORKFORCE_DEVELOPMENT&CREF=&FolderRef=HC_WORKFORCE_DEVELOPMENT&c=PfDKxdOQe8E/R8xQKXoCng==&Bodyid=true
+2004-04-20	17:25:38	0.551	7782	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psc/ps/EMPLOYEE/HRMS/s/WEBLIB_PT_NAV.ISCRIPT1.FieldFormula.IScript_PT_NAV_PAGELET	Folder=HC_WORKFORCE_INFO&CREF=&FolderRef=HC_WORKFORCE_INFO&c=PfDKxdOQe8E/R8xQKXoCng==&Bodyid=true
+2004-04-20	17:25:42	0.761	674	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psp/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	-
+2004-04-20	17:25:42	0.52	2713	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psc/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	PortalActualURL=http%3a%2f%2fgo-faster-3%3a7201%2fpsc%2fps%2fEMPLOYEE%2fHRMS%2fc%2fADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL&PortalContentURL=http%3a%2f%2fgo-faster-3%3a7201%2fpsc%2fps%2fEMPLOYEE%2fHRMS%2fc%2fADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL&PortalContentProvider=HRMS&PortalCRefLabel=Job%20Data&PortalRegistryName=EMPLOYEE&PortalServletURI=http%3a%2f%2fgo-faster-3%3a7201%2fpsp%2fps%2f&PortalURI=http%3a%2f%2fgo-faster-3%3a7201%2fpsc%2fps%2f&PortalHostNode=HRMS&NoCrumbs=yes
+2004-04-20	17:25:50	1.292	3633	10.0.0.3	elgin	POST	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psc/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	-
+2004-04-20	17:25:53	1.282	6722	10.0.0.3	elgin	POST	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psc/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	-
+2004-04-20	17:26:01	0.471	4866	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psc/ps/EMPLOYEE/HRMS/s/WEBLIB_PT_NAV.ISCRIPT1.FieldFormula.IScript_PT_NAV_PAGELET	Folder=HC_WORKFORCE_ADMINISTRATION&CREF=&FolderRef=HC_WORKFORCE_ADMINISTRATION&c=PfDKxdOQe8E/R8xQKXoCng==&Bodyid=true
+2004-04-20	17:26:02	0.2	65	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_OPEN_FLDR_1.gif	-
+2004-04-20	17:26:04	0.501	7783	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psc/ps/EMPLOYEE/HRMS/s/WEBLIB_PT_NAV.ISCRIPT1.FieldFormula.IScript_PT_NAV_PAGELET	Folder=HC_WORKFORCE_INFO&CREF=&FolderRef=HC_WORKFORCE_INFO&c=PfDKxdOQe8E/R8xQKXoCng==&Bodyid=true
+2004-04-20	17:26:06	0.561	675	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psp/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	-
+2004-04-20	17:26:07	0.39	7930	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psc/ps/EMPLOYEE/HRMS/s/WEBLIB_PT_NAV.ISCRIPT1.FieldFormula.IScript_PT_NAV_INFRAME	c=PfDKxdOQe8E%2fR8xQKXoCng%3d%3d&PortalActualURL=https%3a%2f%2fgo-faster-3%3a7202%2fpsc%2fps%2fEMPLOYEE%2fHRMS%2fc%2fADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL&PortalContentURL=https%3a%2f%2fgo-faster-3%3a7202%2fpsc%2fps%2fEMPLOYEE%2fHRMS%2fc%2fADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL&PortalContentProvider=HRMS&PortalRegistryName=EMPLOYEE&PortalServletURI=https%3a%2f%2fgo-faster-3%3a7202%2fpsp%2fps%2f&PortalURI=https%3a%2f%2fgo-faster-3%3a7202%2fpsc%2fps%2f&PortalHostNode=HRMS&PortalIsPagelet=true&NoCrumbs=yes
+2004-04-20	17:26:07	0.701	2317	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psc/ps/EMPLOYEE/HRMS/s/WEBLIB_PT_NAV.ISCRIPT1.FieldFormula.IScript_UniHeader_Frame	c=PfDKxdOQe8E%2fR8xQKXoCng%3d%3d&PortalActualURL=https%3a%2f%2fgo-faster-3%3a7202%2fpsc%2fps%2fEMPLOYEE%2fHRMS%2fc%2fADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL&PortalContentURL=https%3a%2f%2fgo-faster-3%3a7202%2fpsc%2fps%2fEMPLOYEE%2fHRMS%2fc%2fADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL&PortalContentProvider=HRMS&PortalRegistryName=EMPLOYEE&PortalServletURI=https%3a%2f%2fgo-faster-3%3a7202%2fpsp%2fps%2f&PortalURI=https%3a%2f%2fgo-faster-3%3a7202%2fpsc%2fps%2f&PortalHostNode=HRMS&PortalIsPagelet=true&NoCrumbs=yes
+2004-04-20	17:26:07	0.36	4039	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_INFRAME_SCRIPT_1.js	-
+2004-04-20	17:26:07	0.701	2714	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psc/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	PortalActualURL=https%3a%2f%2fgo-faster-3%3a7202%2fpsc%2fps%2fEMPLOYEE%2fHRMS%2fc%2fADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL&PortalContentURL=https%3a%2f%2fgo-faster-3%3a7202%2fpsc%2fps%2fEMPLOYEE%2fHRMS%2fc%2fADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL&PortalContentProvider=HRMS&PortalCRefLabel=Job%20Data&PortalRegistryName=EMPLOYEE&PortalServletURI=https%3a%2f%2fgo-faster-3%3a7202%2fpsp%2fps%2f&PortalURI=https%3a%2f%2fgo-faster-3%3a7202%2fpsc%2fps%2f&PortalHostNode=HRMS&NoCrumbs=yes
+2004-04-20	17:26:08	0.291	326	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_SHOW_MENU_1.gif	-
+2004-04-20	17:26:08	0.221	1297	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_KEY_HEADER_1.js	-
+2004-04-20	17:26:08	0.15	519	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_KEYHANDLER_1.js	-
+2004-04-20	17:26:08	0.3	221	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_SCRIPTIE600_1.js	-
+2004-04-20	17:26:08	0.24	51	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NAV_REVERSE_BULLET_1.gif	-
+2004-04-20	17:26:08	0.231	12616	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PAGESCRIPT_win0_1.js	-
+2004-04-20	17:26:08	0.11	1306	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_COPYURL_1.js	-
+2004-04-20	17:26:09	0.15	13381	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_EDITSCRIPT_win0_1.js	-
+2004-04-20	17:26:09	0.23	142	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_COPYURL_IMG_1.gif	-
+2004-04-20	17:26:09	0.25	282	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PROCESSING_1.gif	-
+2004-04-20	17:26:09	0.121	44	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB1LAX_1.gif	-
+2004-04-20	17:26:09	0.231	44	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB1RAX_1.gif	-
+2004-04-20	17:26:09	0.33	59	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB1MAX_1.gif	-
+2004-04-20	17:26:09	0.22	71	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB2LAXFFFFFF_1.gif	-
+2004-04-20	17:26:09	0.13	70	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB2RAXFFFFFF_1.gif	-
+2004-04-20	17:26:10	0.321	52	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB3LAXFFFFFF_1.gif	-
+2004-04-20	17:26:10	0.361	248	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_SEARCH_1.gif	-
+2004-04-20	17:26:10	0.18	45	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB_BOTTOM_LINE_1.GIF	-
+2004-04-20	17:26:10	0.13	52	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB3RAXFFFFFF_1.gif	-
+2004-04-20	17:26:10	0.32	235	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_CLEAR_1.gif	-
+2004-04-20	17:26:10	0.2	131	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_SAVESEARCH_1.gif	-
+2004-04-20	17:26:14	0.48	3633	10.0.0.8	go-faster-3	POST	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psc/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	-
+2004-04-20	17:26:14	0.291	873	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PREVIOUSROW_D_1.gif	-
+2004-04-20	17:26:14	0.301	874	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NEXTROW_D_1.gif	-
+2004-04-20	17:26:17	1.422	6741	10.0.0.8	go-faster-3	POST	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psc/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	-
+2004-04-20	17:26:17	0.2	4823	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_CALENDARSCRIPT_win0_1.js	-
+2004-04-20	17:26:17	0.26	45	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB1BII_1.gif	-
+2004-04-20	17:26:17	0.351	48	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB1MIX_1.gif	-
+2004-04-20	17:26:17	0.14	10560	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_CALENDARPAGE_1.htm	-
+2004-04-20	17:26:18	0.27	51	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB1BAI_1.gif	-
+2004-04-20	17:26:18	0.33	44	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB1RIX_1.gif	-
+2004-04-20	17:26:18	0.23	76	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB2BIIDCC8A2_1.gif	-
+2004-04-20	17:26:18	0.141	98	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB2BAIDCC8A2FFFFFF_1.gif	-
+2004-04-20	17:26:18	0.221	70	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB2RIXDCC8A2_1.gif	-
+2004-04-20	17:26:18	0.32	54	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB3BAIDCC8A2FFFFFF_1.gif	-
+2004-04-20	17:26:18	0.22	48	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB3MIXDCC8A2_1.gif	-
+2004-04-20	17:26:18	0.13	54	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB3BIIDCC8A2_1.gif	-
+2004-04-20	17:26:19	0.22	52	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB3RIXDCC8A2_1.gif	-
+2004-04-20	17:26:19	0.231	121	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_ADD_1.gif	-
+2004-04-20	17:26:19	0.351	196	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_ESP_COL_1.gif	-
+2004-04-20	17:26:19	0.38	158	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PROMPT_LOOKUP_1.gif	-
+2004-04-20	17:26:19	0.28	162	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_CALENDAR_1.gif	-
+2004-04-20	17:26:19	0.14	116	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_DELETE_1.gif	-
+2004-04-20	17:26:19	0.251	201	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_JPN_COL_1.gif	-
+2004-04-20	17:26:19	0.241	274	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_SAVE_1.gif	-
+2004-04-20	17:26:20	0.14	226	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NEXTINLIST_1.gif	-
+2004-04-20	17:26:20	0.24	313	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_RETURN_1.gif	-
+2004-04-20	17:26:20	0.23	252	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PREVINLIST_1.gif	-
+2004-04-20	17:26:20	0.23	241	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_SENDNOTIFY_1.gif	-
+2004-04-20	17:26:20	0.321	214	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PREVTAB_D_1.gif	-
+2004-04-20	17:26:20	0.231	232	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_NEXTTAB_1.gif	-
+2004-04-20	17:26:20	0.14	206	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_REFRESH_1.gif	-
+2004-04-20	17:26:20	0.23	257	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_UPDATEMODE_D_1.gif	-
+2004-04-20	17:26:21	0.23	315	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_UPDATEALLMODE_1.gif	-
+2004-04-20	17:26:21	0.24	303	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_CORRECTMODE_1.gif	-
+2004-04-20	17:26:21	0.12	168	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_DATE_HEADER_1.gif	-
+2004-04-20	17:26:21	0.23	78	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_CURRENT_DATE_1.gif	-
+2004-04-20	17:26:21	0.22	95	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_SELECTED_DATE_1.gif	-
+2004-04-20	17:26:21	0.22	186	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_DATE_TITLE_1.gif	-
+2004-04-20	17:26:21	0.22	116	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_LEFT_SCROLL_1.gif	-
+2004-04-20	17:26:21	0.211	116	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_RIGHT_SCROLL_1.gif	-
+2004-04-20	17:38:02	2.253	9462	10.0.0.8	go-faster-3	POST	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/psc/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	-
+2004-04-20	17:38:03	0.31	44	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB1LIX_1.gif	-
+2004-04-20	17:38:03	0.45	51	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB1BIA_1.gif	-
+2004-04-20	17:38:03	0.36	71	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB2LIXDCC8A2_1.gif	-
+2004-04-20	17:38:03	0.131	99	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB2BIADCC8A2FFFFFF_1.gif	-
+2004-04-20	17:38:03	0.13	52	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB3LIXDCC8A2_1.gif	-
+2004-04-20	17:38:03	0.22	54	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_TAB3BIADCC8A2FFFFFF_1.gif	-
+2004-04-20	17:38:03	0.23	193	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_BEL_EX_1.gif	-
+2004-04-20	17:38:04	0.26	153	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_DEU_EX_1.gif	-
+2004-04-20	17:38:05	1.022	161	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_FRA_EX_1.gif	-
+2004-04-20	17:38:05	1.122	126	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_REFRESH_ICN_1.gif	-
+2004-04-20	17:38:05	0.35	158	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_ITA_EX_1.gif	-
+2004-04-20	17:38:05	0.25	163	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_USA_EX_1.gif	-
+2004-04-20	17:38:05	0.281	345	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_AUS_EX_1.gif	-
+2004-04-20	17:38:05	0.271	327	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_NZL_EX_1.gif	-
+2004-04-20	17:38:06	0.26	316	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_MYS_EX_1.gif	-
+2004-04-20	17:38:06	0.26	292	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_MEX_EX_1.gif	-
+2004-04-20	17:38:06	0.23	153	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_NLD_EX_1.gif	-
+2004-04-20	17:38:06	0.23	215	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PS_BRZ_EX_1.gif	-
+2004-04-20	17:38:06	0.241	250	10.0.0.8	go-faster-3	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"	/cs/ps/cache/PT_PREVTAB_1.gif	-
+2004-04-20	17:38:25	0.651	9467	10.0.0.3	elgin	POST	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/psc/ps/EMPLOYEE/HRMS/c/ADMINISTER_WORKFORCE_(GBL).JOB_DATA.GBL	-
+2004-04-20	17:38:25	0.11	193	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_BEL_EX_1.gif	-
+2004-04-20	17:38:25	0.15	153	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_DEU_EX_1.gif	-
+2004-04-20	17:38:25	0.17	161	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_FRA_EX_1.gif	-
+2004-04-20	17:38:25	0.18	126	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_REFRESH_ICN_1.gif	-
+2004-04-20	17:38:25	0.21	158	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_ITA_EX_1.gif	-
+2004-04-20	17:38:25	0.221	163	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_USA_EX_1.gif	-
+2004-04-20	17:38:26	0.201	345	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_AUS_EX_1.gif	-
+2004-04-20	17:38:26	0.19	327	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_NZL_EX_1.gif	-
+2004-04-20	17:38:26	0.19	316	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_MYS_EX_1.gif	-
+2004-04-20	17:38:26	0.26	292	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_MEX_EX_1.gif	-
+2004-04-20	17:38:26	0.18	153	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_NLD_EX_1.gif	-
+2004-04-20	17:38:26	0.201	215	10.0.0.3	elgin	GET	200	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/cs/ps/cache/PS_BRZ_EX_1.gif	-
+2004-04-20	17:39:34	0.0	0	10.0.0.3	elgin	GET	302	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/	-
+2004-04-20	17:39:34	0.0	0	10.0.0.3	elgin	GET	304	"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322)"	/index.html	-

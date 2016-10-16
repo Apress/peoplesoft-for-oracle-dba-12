@@ -1,0 +1,7 @@
+control=txrpt.ldr
+log=txrpt.log
+bad=txrpt.bad 
+direct=false
+errors=999999
+rows=500
+

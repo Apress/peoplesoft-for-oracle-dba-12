@@ -1,0 +1,28 @@
+LOAD DATA
+INFILE 'PIA_access.log'
+REPLACE
+INTO TABLE weblogic
+WHEN (1) != '#'
+FIELDS TERMINATED BY WHITESPACE
+TRAILING NULLCOLS
+(timestamp      position(1:19) "TO_DATE(:timestamp,'YYYY-MM-DD HH24:MI:ss')" 
+,duration     
+,bytes_sent     
+,remote_host1   TERMINATED BY '.'
+,remote_host2   TERMINATED BY '.'
+,remote_host3   TERMINATED BY '.'
+,remote_host4     
+,remote_dns
+,request_method 
+,return_status  NULLIF (return_status="-")
+,user_agent     OPTIONALLY ENCLOSED BY '"'
+,url          
+,query_string1  TERMINATED BY '&' "SUBSTR(:query_string1,2)" 
+,query_string2  TERMINATED BY '&'
+,query_string3  TERMINATED BY '&'
+,query_string4  TERMINATED BY '&'
+,query_string5  TERMINATED BY '&'
+,query_string6  TERMINATED BY '&'
+,query_string7  TERMINATED BY '&'
+,query_string8  TERMINATED BY '&'
+)

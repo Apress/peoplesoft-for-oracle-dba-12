@@ -1,0 +1,61 @@
+SELECT * FROM (
+SELECT 	y.*
+,	num_active*cpu_m+cpu_c cpu_y
+,	num_active*mem_m+mem_c mem_y
+FROM	(
+SELECT  num_active
+,       MEDIAN(cpu_pct) med_cpu_pct, AVG(cpu_pct) avg_cpu_pct, STDDEV(cpu_pct) cpu_std_dev
+,       MEDIAN(mem_pct) med_mem_pct, AVG(mem_pct) avg_mem_pct, STDDEV(mem_pct) mem_std_dev
+,       COUNT(*) num
+,	avg(cpu_m) cpu_m, avg(cpu_c) cpu_c
+,	avg(mem_m) mem_m, avg(mem_c) mem_c
+FROM    (
+SELECT  e302.num_active, e300.cpu_pct, e300.mem_pct
+,	REGR_SLOPE(e300.cpu_pct, e302.num_active) OVER () as cpu_M
+,	REGR_INTERCEPT(e300.cpu_pct, e302.num_active) OVER () as cpu_C
+,	REGR_SLOPE(e300.mem_pct, e302.num_active) OVER () as mem_M
+,	REGR_INTERCEPT(e300.mem_pct, e302.num_active) OVER () as mem_C
+FROM   (SELECT c300.pm_agentid, c300.pm_agent_dttm
+        ,      c300.pm_metric_value1 cpu_pct
+        ,      c300.pm_metric_value2 mem_pct
+        FROM   pspmeventhist c300
+        WHERE  c300.pm_event_defn_set = 1
+        AND    c300.pm_event_defn_id = 300 /*host CPU*/
+       ) e300
+,      (SELECT c302.pm_agentid, c302.pm_agent_dttm
+	,      COUNT(*) num_active
+        FROM   pspmeventhist c302, pspmagent b, pspmsysdefn a
+        WHERE  a.pm_systemid = b.pm_systemid
+        AND    b.pm_agentid = c302.pm_agentid
+        AND    c302.pm_event_defn_id = 302 /*PSR*/
+        AND    a.dbname IN('fin8prod')
+        AND    c302.pm_event_defn_set = 1
+        AND    c302.pm_metric_value7 = 'PSAPPSRV'
+        AND    longtochar.pspmeventhist(c302.rowid) != '(idle)'
+--      CAST(c302.pm_addtnl_descr AS VARCHAR2(30)) != '(idle)'
+        GROUP BY c302.pm_agentid, c302.pm_agent_dttm
+       ) e302
+WHERE   e300.pm_agentid = e302.pm_agentid
+AND     e300.pm_agent_dttm = e302.pm_agent_dttm
+) x GROUP BY num_active ) y )
+ORDER BY 1
+
+
+
+NUM_ACTIVE MED_CPU_PCT AVG_CPU_PCT CPU_STD_DEV MED_MEM_PCT AVG_MEM_PCT MEM_STD_DEV        NUM
+---------- ----------- ----------- ----------- ----------- ----------- ----------- ----------
+         1      32.105  33.0897632  20.5593783       54.05  54.8685006  5.02939916       1774
+         2      40.385   41.130812  18.3275872       55.59  56.4909774  5.19707877       1330
+         3       43.27  43.1177889  18.0107984       55.93  56.6305421  5.23327098        701
+         4        49.8  49.7491723   17.891164        58.1  58.4752796  5.48226606        447
+         5      53.915  53.0600758  17.1429076       59.93  59.8831061  5.76365611        264
+         6       55.74  56.9888718  17.1892367       60.43  61.0834872  6.02834346        195
+         7       59.49      57.405  16.7382816      61.545  61.5407143  4.68311977         98
+         8       69.55  66.8985507  13.9749304        65.5  65.2018841  4.82803342         69
+         9      73.045     68.9894  16.9117922       64.74     65.5952   4.6431891         50
+        10       76.82     72.8035  13.4078927      66.885    67.08375  4.04660712         40
+        11      74.985  70.9971429  16.0148681      67.235  67.7003571    3.425504         28
+        12       78.98       76.41  16.6637557        68.5  69.1810526  3.23771163         19
+        13       71.65  68.3336364  18.0792441       69.01  70.3854545  3.47977115         11
+        14       81.38       81.55  6.80920455          69     69.2875  2.18073955          4
+

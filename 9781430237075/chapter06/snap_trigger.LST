@@ -1,0 +1,70 @@
+SQL> rollback;
+
+Rollback complete.
+
+SQL> rem requires following grants to be made explicitly by sys
+SQL> rem GRANT EXECUTE ON perfstat.sysadm TO sysadm;
+SQL> 
+SQL> CREATE OR REPLACE trigger sysadm.snap
+  2  BEFORE UPDATE OF runstatus ON sysadm.psprcsrqst
+  3  FOR EACH ROW
+  4  WHEN (  (new.runstatus = 7 and old.runstatus != 7)
+  5       or (new.runstatus != 7 and old.runstatus = 7)
+  6       )
+  7  DECLARE
+  8     PRAGMA AUTONOMOUS_TRANSACTION;
+  9     l_comment VARCHAR2(160);
+ 10  BEGIN
+ 11     l_comment = :new.prcstype
+ 12          ||' '||:new.prcsname
+ 13          ||' '||:new.prcsinstance
+ 14          ||' '||DECODE(:new.runstatus,7,'Start','End')
+ 15     perfstat.statspack.snap
+ 16        (i_snap_level=>5
+ 17        ,i_ucomment=l_comment
+ 18        );
+ 19     COMMIT;
+ 20  EXCEPTION WHEN OTHERS THEN NULL;
+ 21  END;
+ 22  /
+
+Warning: Trigger created with compilation errors.
+
+SQL> 
+SQL> show errors
+Errors for TRIGGER SYSADM.SNAP:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/14     PLS-00103: Encountered the symbol "=" when expecting one of the        
+         following:                                                             
+         := . ( @ % ;                                                           
+                                                                                
+9/4      PLS-00103: Encountered the symbol "PERFSTAT" when expecting one        
+         of the following:                                                      
+         . ( * % & - + ; / at mod rem return returning                          
+         <an exponent (**)> and or ||                                           
+         The symbol "." was substituted for "PERFSTAT" to continue.             
+                                                                                
+13/4     PLS-00103: Encountered the symbol "COMMIT"                             
+SQL> 
+SQL> rem test that the trigger fires by updating something
+SQL> UPDATE  sysadm.psprcsrqst
+  2  SET     runstatus = 7
+  3  WHERE   runstatus != 7
+  4  AND     prcstype IN('Application Engine','COBOL SQL',
+  5          'SQR Process','SQR Report','SQR Report For WF Delivery')
+  6  AND     rownum = 1
+  7  ;
+AND     prcstype IN('Application Engine','COBOL SQL',
+             *
+ERROR at line 4:
+ORA-04098: trigger 'SYSADM.SNAP' is invalid and failed re-validation 
+
+
+SQL> 
+SQL> rollback;
+
+Rollback complete.
+
+SQL> spool off

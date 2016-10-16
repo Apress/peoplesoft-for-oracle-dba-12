@@ -1,0 +1,41 @@
+CREATE unique index txrpt
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+0 rows updated.
+
+
+QUEUE SERVICE              MIN(STIME MAX(STIME   COUNT(*)                       
+----- -------------------- --------- --------- ----------                       
+APPQ  ICPanel              26-APR-04 26-APR-04         18                       
+APPQ  ICScript             26-APR-04 26-APR-04         10                       
+APPQ  HomepageT            26-APR-04 26-APR-04          1                       
+APPQ  PpmMonSvc            26-APR-04 26-APR-04          1                       
+APPQ  GetWebProfile        26-APR-04 26-APR-04          1                       
+APPQ  JavaMgrGetObj        26-APR-04 26-APR-04          4                       
+APPQ  GetCertificate       26-APR-04 26-APR-04          3                       
+APPQ  PortalRegistry       26-APR-04 26-APR-04         13                       
+
+8 rows selected.
+
+
+Table(s) Locked.
+
+
+Index created.
+
+
+View created.
+

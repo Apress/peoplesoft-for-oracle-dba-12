@@ -1,0 +1,8 @@
+control=client.ldr
+log=client.log
+bad=client.bad
+discard=client.dsc 
+direct=false
+errors=999999
+rows=500
+

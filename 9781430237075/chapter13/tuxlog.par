@@ -1,0 +1,7 @@
+control=tuxlog.ldr
+log=tuxlog.log
+bad=tuxlog.bad 
+direct=false
+errors=999999
+rows=500
+

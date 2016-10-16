@@ -1,0 +1,70 @@
+
+SQL*Loader: Release 9.2.0.5.0 - Production on Thu Nov 18 15:08:42 2004
+
+Copyright (c) 1982, 2002, Oracle Corporation.  All rights reserved.
+
+Control File:   apache.ldr
+Data File:      access.log
+  Bad File:     apache.bad
+  Discard File: apache.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 999999
+Bind array:     500 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table "SCOTT"."WEBLOGIC", loaded from every logical record.
+Insert option in effect for this table: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TIMESTAMP                           FIRST     *   |       CHARACTER            
+    SQL string for column : "TO_DATE(:timestamp,'YYYY.MM.DD HH24:MI:ss')"
+DURATION                             NEXT     *   |       CHARACTER            
+BYTES_SENT                           NEXT     *   |       CHARACTER            
+STATUS                               NEXT     *   |       CHARACTER            
+  (FILLER FIELD)
+REMOTE_HOST1                         NEXT     *   .       CHARACTER            
+REMOTE_HOST2                         NEXT     *   .       CHARACTER            
+REMOTE_HOST3                         NEXT     *   .       CHARACTER            
+REMOTE_HOST4                         NEXT     *   |       CHARACTER            
+USER_AGENT                           NEXT     *   |       CHARACTER            
+RETURN_STATUS                        NEXT     *   |       CHARACTER            
+    NULL if RETURN_STATUS = 0X2d(character '-')
+REQUEST_METHOD                       NEXT     *   |       CHARACTER            
+URL                                  NEXT     *   |       CHARACTER            
+QUERY_STRING1                        NEXT     *   &       CHARACTER            
+    SQL string for column : "SUBSTR(:query_string1,2)"
+QUERY_STRING2                        NEXT     *   &       CHARACTER            
+QUERY_STRING3                        NEXT     *   &       CHARACTER            
+QUERY_STRING4                        NEXT     *   &       CHARACTER            
+QUERY_STRING5                        NEXT     *   &       CHARACTER            
+QUERY_STRING6                        NEXT     *   &       CHARACTER            
+QUERY_STRING7                        NEXT     *   &       CHARACTER            
+QUERY_STRING8                        NEXT     *   &       CHARACTER            
+
+
+Table "SCOTT"."WEBLOGIC":
+  10 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 254904 bytes(52 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            10
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Nov 18 15:08:42 2004
+Run ended on Thu Nov 18 15:08:43 2004
+
+Elapsed time was:     00:00:00.65
+CPU time was:         00:00:00.03

@@ -1,0 +1,12 @@
+
+DURRANK QUERY_NAME                       DURATION EXECUTIONS                    
+------- ------------------------------ ---------- ----------                    
+      1 RCT_BUSCON                             26          3                    
+      2 SAYE_APP_CLOSURES                      11          2                    
+      3 ALLACCIDENTS                           10          2                    
+      4 SBC_ISSUES                              6          1                    
+      5 BB_JOB_FAMILY_DESCRITIONS               5          1                    
+      5 PM_LVRS_MTH                             5          1                    
+
+6 rows selected.
+

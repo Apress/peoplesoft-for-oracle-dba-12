@@ -1,0 +1,22 @@
+LOAD DATA
+INFILE 'PS_go-faster-3.tracesql'
+REPLACE
+INTO TABLE tracesql
+FIELDS TERMINATED BY WHITESPACE
+TRAILING NULLCOLS
+(program                    TERMINATED BY '.'
+,pid               
+,line_id                    TERMINATED BY '-'
+,line_num          
+,timestamp       "TO_DATE(REPLACE(:timestamp,'.',':'),'HH24:MI:SS')"
+,time_since_last     
+,cursor_lead     FILLER     TERMINATED BY '#'
+,cursor                     TERMINATED BY '.'
+,database          
+,return_lead     FILLER     TERMINATED BY '='
+,return_code          
+,duration_lead   FILLER     TERMINATED BY '='
+,duration          
+,operation       CHAR(4000) TERMINATED BY '&' "SUBSTR(:operation,1,4000)"
+--,tracesql_seq SEQUENCE(MAX,1)
+)

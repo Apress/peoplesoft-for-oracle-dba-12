@@ -1,0 +1,62 @@
+
+Table dropped.
+
+DROP SYNONYM weblogic
+             *
+ERROR at line 1:
+ORA-01434: private synonym to be dropped does not exist 
+
+
+DROP VIEW weblogic
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE apache
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Synonym dropped.
+
+DROP VIEW apache
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Synonym created.
+
+
+Table created.
+
+
+Package created.
+
+
+Package body created.
+
+
+Trigger created.
+
+  1  create or replace trigger weblogic_query_string_dehex
+  2  BEFORE INSERT OR UPDATE on weblogic
+  3  FOR EACH ROW
+  4  BEGIN
+  5     :new.query_string1 := dehex.dehex(:new.query_String1);
+  6     :new.query_string2 := dehex.dehex(:new.query_String2);
+  7     :new.query_string3 := dehex.dehex(:new.query_String3);
+  8     :new.query_string4 := dehex.dehex(:new.query_String4);
+  9     :new.query_string5 := dehex.dehex(:new.query_String5);
+ 10     :new.query_string6 := dehex.dehex(:new.query_String6);
+ 11     :new.query_string7 := dehex.dehex(:new.query_String7);
+ 12     :new.query_string8 := dehex.dehex(:new.query_String8);
+ 13* END;
+
+Trigger created.
+
+No errors.

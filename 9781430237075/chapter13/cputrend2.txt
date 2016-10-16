@@ -1,0 +1,71 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT * FROM (
+SELECT  e302.num_active, e300.pm_host_port, e300.cpu_pct
+,	REGR_SLOPE(e300.cpu_pct, e302.num_active) OVER () as M
+,	REGR_INTERCEPT(e300.cpu_pct, e302.num_active) OVER () as C
+FROM    (
+        SELECT c300.pm_agentid, c300.pm_agent_dttm, b.pm_host_port
+        ,      c300.pm_metric_value1 cpu_pct
+        ,      c300.pm_metric_value2 mem_pct
+        FROM   pspmeventhist c300
+        ,      pspmagent b
+        ,      pspmsysdefn a
+        WHERE  a.pm_systemid = b.pm_systemid
+        AND    b.pm_agentid = c300.pm_agentid
+        AND    c300.pm_event_defn_set = 1
+        AND    c300.pm_event_defn_id = 300 /*host CPU*/
+        AND    a.dbname IN('MHRPRD1A')
+        ) e300
+,       (
+        SELECT c302.pm_agentid, c302.pm_agent_dttm
+        ,      count(*) num_active
+        FROM   pspmeventhist c302
+        ,      pspmagent b
+        ,      pspmsysdefn a
+        WHERE  a.pm_systemid = b.pm_systemid
+        AND    b.pm_agentid = c302.pm_agentid
+        AND    c302.pm_event_defn_id = 302 /*PSR*/
+        AND    a.dbname IN('MHRPRD1A')
+        AND    c302.pm_event_defn_set = 1
+        AND    longtochar.pspmeventhist(c302.rowid) != '(idle)'
+--      AND    c302.pm_addtnl_descr != '(idle)'
+        AND    c302.pm_metric_value7 = 'PSAPPSRV'
+        GROUP BY c302.pm_agentid, c302.pm_agent_dttm
+        ) e302
+WHERE   e300.pm_agentid = e302.pm_agentid
+AND     e300.pm_agent_dttm = e302.pm_agent_dttm
+) ORDER BY 1,2
+
+
+
+
+
+NUM_ACTIVE MED_CPU_PCT AVG_CPU_PCT CPU_STD_DEV MED_MEM_PCT AVG_MEM_PCT MEM_STD_DEV        NUM
+---------- ----------- ----------- ----------- ----------- ----------- ----------- ----------
+         1       27.29  29.5071749  18.9439215       52.94  53.7754069  4.32696161       1069
+         2       39.84  40.0597772  17.3557331       54.97  55.5226868  4.65523246        763
+         3      43.655   43.837179  16.9267989      56.005  56.6921206  5.44702444        514
+         4      49.155  50.0553779  18.0418281          58  58.4131395  5.57089003        344
+         5       54.61  54.3646544  16.4924582        60.5  60.1710599  5.79535728        217
+         6      57.245  57.9855952  16.5590902      60.795  61.3094643  5.97097513        168
+         7       59.83  57.4926437   17.096384       61.38  61.5791954  4.55946325         87
+         8       69.55  67.0227869  13.7847214       65.12  64.8367213   4.6760905         61
+         9      72.575  68.4666667  17.0413238       64.54  65.4789583   4.6442828         48
+        10       76.08  72.5112821  13.4535081       66.84  66.8869231  3.90070989         39
+        11       74.28  70.7892593  16.2813969        67.2  67.5362963  3.37679656         27
+        12       78.93  74.9742105  17.3116436       68.34  69.1636842  3.24199734         19
+        13       71.65  67.9644444  18.7064816       69.01  69.8255556  2.78909533          9
+        14       81.38       81.55  6.80920455          69     69.2875  2.18073955          4

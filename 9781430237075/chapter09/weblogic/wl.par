@@ -1,0 +1,8 @@
+control=wl.ldr
+log=wl.log
+bad=wl.bad 
+discard=wl.dsc
+direct=false
+errors=999999
+rows=500
+

@@ -1,0 +1,44 @@
+SQL> 
+SQL> DECLARE
+  2  	     CURSOR c_spcdiff IS
+  3  	     SELECT  r.recname, s.ddlspacename
+  4  	     ,	     t.table_name, t.tablespace_name
+  5  	     FROM    psrecdefn r
+  6  	     ,	     psrectblspc s
+  7  	     ,	     user_tables t
+  8  	     WHERE   t.table_name = DECODE(r.sqltablename,' ','PS_'||r.recname,r.sqltablename)
+  9  	     AND     r.rectype IN(0,7)
+ 10  	     AND     s.recname = r.recname
+ 11  	     AND     t.tablespace_name != s.ddlspacename
+ 12  	     ;
+ 13  	     p_spcdiff c_spcdiff%ROWTYPE;
+ 14  	     l_updcount INTEGER := 0;
+ 15  BEGIN
+ 16  	     OPEN c_spcdiff;
+ 17  	     LOOP
+ 18  		     FETCH c_spcdiff INTO p_spcdiff;
+ 19  		     EXIT WHEN c_spcdiff%NOTFOUND;
+ 20  
+ 21  		     UPDATE  psrectblspc
+ 22  		     SET     ddlspacename = p_spcdiff.ddlspacename
+ 23  		     WHERE   recname = p_spcdiff.recname
+ 24  		     ;
+ 25  
+ 26  		     l_updcount := l_updcount + 1;
+ 27  		     sys.dbms_output.put_line(
+ 28  -- 		     ''||l_updcount||':'||
+ 29  			     p_spcdiff.recname||':'||
+ 30  			     p_spcdiff.ddlspacename||'->'||
+ 31  			     p_spcdiff.tablespace_name);
+ 32  	     END LOOP;
+ 33  	     CLOSE c_spcdiff;
+ 34  	     sys.dbms_output.put_line(''||l_updcount||' records updated.');
+ 35  END;
+ 36  /
+PSRECDEFN:FREd->PSIMAGE
+1 records updated.
+
+PL/SQL procedure successfully completed.
+
+SQL> 
+SQL> spool off

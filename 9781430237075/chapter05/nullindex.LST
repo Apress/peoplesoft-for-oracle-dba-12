@@ -1,0 +1,41 @@
+
+Table created.
+
+
+Index created.
+
+
+1 row created.
+
+INSERT INTO dmk VALUES (null,null,0,2) /*this insert fails - correctly*/
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SYSADM.DMK) violated 
+
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table analyzed.
+
+
+         A          B          C          D                                     
+---------- ---------- ---------- ----------                                     
+                               0          1                                     
+                                          3                                     
+                                          4                                     
+
+
+  NUM_ROWS                                                                      
+----------                                                                      
+         3                                                                      
+
+
+  NUM_ROWS                                                                      
+----------                                                                      
+         1                                                                      
+

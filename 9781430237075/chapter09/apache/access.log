@@ -1,0 +1,10 @@
+2002.02.26 09:57:06|0|67|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|200|GET|/peoplesoft8/cache/PT_TAB3MIXB8B090_ENG_1.GIF|
+2002.02.26 09:57:06|0|187|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|200|GET|/peoplesoft8/cache/PS_FRA_COL_ENG_1.gif|
+2002.02.26 09:57:06|0|214|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|200|GET|/peoplesoft8/cache/PT_PREVTAB_D_ENG_1.gif|
+2002.02.26 09:57:06|0|275|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|200|GET|/peoplesoft8/cache/PT_NEXTTAB_ENG_1.gif|
+2002.02.26 09:57:17|0|31847|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|200|POST|/servlets/iclientservlet|?ICType=Panel&Menu=ADMINISTER_WORKFORCE_(GBL)&Market=GBL&PanelGroupName=JOB_DATA
+2002.02.26 09:57:18|0|161|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|200|GET|/peoplesoft8/cache/PS_FRA_EX_ENG_1.gif|
+2002.02.26 09:57:26|0|30959|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|200|POST|/servlets/iclientservlet|?ICType=Panel&Menu=ADMINISTER_WORKFORCE_(GBL)&Market=GBL&PanelGroupName=JOB_DATA
+2002.02.26 10:17:29|2|6007|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|200|GET|/servlets/iclientservlet|?cmd=expire&languageCd=ENG
+2002.02.26 10:17:30|0|0|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|304|GET|/peoplesoft8/signin.css|
+2002.02.26 10:17:30|0|6007|-|127.0.0.1|Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Q312461)|200|GET|/servlets/iclientservlet|?cmd=expire&languageCd=ENG

@@ -1,0 +1,81 @@
+
+SQL*Loader: Release 9.2.0.5.0 - Production on Thu Nov 18 17:24:58 2004
+
+Copyright (c) 1982, 2002, Oracle Corporation.  All rights reserved.
+
+Control File:   client.ldr
+Data File:      DBG1.tmp
+  Bad File:     client.bad
+  Discard File: client.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 999999
+Bind array:     500 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TRACESQL, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+LINE_ID                             FIRST     *   -       CHARACTER            
+LINE_NUM                             NEXT     *  WHT      CHARACTER            
+TIMESTAMP                            NEXT     *  WHT      CHARACTER            
+    SQL string for column : "TO_DATE(REPLACE(:timestamp,'.',':'),'HH24:MI:SS')"
+TIME_SINCE_LAST                      NEXT     *  WHT      CHARACTER            
+CURSOR_LEAD                          NEXT     *   #       CHARACTER            
+  (FILLER FIELD)
+CURSOR                               NEXT     *   .       CHARACTER            
+DATABASE                             NEXT     *  WHT      CHARACTER            
+RETURN_LEAD                          NEXT     *   =       CHARACTER            
+  (FILLER FIELD)
+RETURN_CODE                          NEXT     *  WHT      CHARACTER            
+DURATION_LEAD                        NEXT     *   =       CHARACTER            
+  (FILLER FIELD)
+DURATION                             NEXT     *  WHT      CHARACTER            
+OPERATION                            NEXT  4000   &       CHARACTER            
+    SQL string for column : "SUBSTR(:operation,1,4000)"
+
+Record 1: Rejected - Error on table TRACESQL, column LINE_ID.
+ORA-01722: invalid number
+
+Record 2: Rejected - Error on table TRACESQL, column LINE_ID.
+ORA-01722: invalid number
+
+Record 3: Rejected - Error on table TRACESQL, column LINE_ID.
+ORA-01722: invalid number
+
+Record 4: Rejected - Error on table TRACESQL, column LINE_NUM.
+ORA-01722: invalid number
+
+Record 5: Rejected - Error on table TRACESQL, column TIME_SINCE_LAST.
+ORA-01722: invalid number
+
+Record 4593: Rejected - Error on table TRACESQL, column TIME_SINCE_LAST.
+ORA-01722: invalid number
+
+
+Table TRACESQL:
+  17270 Rows successfully loaded.
+  6 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 254772 bytes(42 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         17276
+Total logical records rejected:         6
+Total logical records discarded:        0
+
+Run began on Thu Nov 18 17:24:58 2004
+Run ended on Thu Nov 18 17:25:02 2004
+
+Elapsed time was:     00:00:03.74
+CPU time was:         00:00:00.27

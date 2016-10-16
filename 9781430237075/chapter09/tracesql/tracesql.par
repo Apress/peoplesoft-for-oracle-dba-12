@@ -1,0 +1,8 @@
+control=tracesql.ldr
+log=tracesql.log
+bad=tracesql.bad
+discard=tracesql.dsc 
+direct=false
+errors=999999
+rows=500
+
